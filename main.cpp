@@ -2,13 +2,53 @@
 
 using namespace std;
 
-void helloworld();
+void dataTypeDemo();
+void variableDemo();
+void variableScopeDemo();
+void constantDemo();
+//Global variable declaration
+int g=10;
+#define LENGTH 10
+#define WIDTH 5
+#define NEWLINE '\n'
 int main()
 {
-    cout << "Hello world!" << endl;
-    helloworld();
+    cout << "c++ basic demo" << endl;
+    //dataTypeDemo();
+    //variableDemo();
+    //variableScopeDemo();
+    constantDemo();
     return 0;
 }
-void helloworld(){
-    cout << "in function" << endl;
+void dataTypeDemo(){
+    int d = 3;
+    string s ="damitha";
+    float f=70.5;
+
+    cout << "d is:" << d << endl;
+    cout << "s is:" << s << endl;
+    cout << "f is:" << f << endl;
 }
+void variableDemo(){
+    int a,b;
+    int c;
+    float f;
+    a=10;
+    b=20;
+    c=a+b;
+    cout <<"value of c:"<< c <<endl;
+    f=70.0/3.0;
+    cout <<"value of f:"<<f<<endl;
+}
+void variableScopeDemo(){
+    cout <<"global g value"<<g<<endl;
+    int g=5;
+    cout <<"local g value"<<g<<endl;
+}
+void constantDemo(){
+    const int LOCAL = 20;
+    int area=LENGTH*WIDTH;
+    cout <<"area:"<<area<<endl;
+    cout <<"local:"<<20<<endl;
+}
+
