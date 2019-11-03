@@ -6,6 +6,7 @@ void dataTypeDemo();
 void variableDemo();
 void variableScopeDemo();
 void constantDemo();
+void modifierTypeDemo();
 //Global variable declaration
 int g=10;
 #define LENGTH 10
@@ -17,7 +18,8 @@ int main()
     //dataTypeDemo();
     //variableDemo();
     //variableScopeDemo();
-    constantDemo();
+    //constantDemo();
+    modifierTypeDemo();
     return 0;
 }
 void dataTypeDemo(){
@@ -51,4 +53,19 @@ void constantDemo(){
     cout <<"area:"<<area<<endl;
     cout <<"local:"<<20<<endl;
 }
+void modifierTypeDemo(){
+    signed int a;
+    unsigned int b;
+    long int c;
+    short int d;
+    a=-10;
+    b=-10;
+    c=-10;
+    d=-10;
+    cout<<"signed 10"<<a<<endl;
+    cout<<"unsigned 10"<<b<<endl;
+    cout<<"long 10"<<c<<endl;
+    cout<<"short"<<d<<endl;
+}
+
 
